@@ -5,7 +5,6 @@ import (
 	"math"
 )
 
-// Fungsi factorial
 func factorial(n int) uint64 {
 	if n == 0 {
 		return 1
@@ -17,7 +16,6 @@ func factorial(n int) uint64 {
 	return result
 }
 
-// Fungsi f(n) = (n!) / (2^n), hasil dibulatkan ke atas
 func f(n int) uint64 {
 	num := float64(factorial(n))
 	den := math.Pow(2, float64(n))
